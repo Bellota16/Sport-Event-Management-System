@@ -172,6 +172,7 @@ header.sticky nav a:hover {
                 <li><a href="./about.php">About</a></li>
                 <li><a href="./contact.php">Contact</a></li>
                 <li><a href="../signup/logout.php">Logout</a></li>
+           
             </ul>
         </nav>
     </header>

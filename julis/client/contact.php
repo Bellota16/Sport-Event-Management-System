@@ -122,6 +122,7 @@ body{
   background: #3e2093;
   cursor: pointer;
   transition: all 0.3s ease;
+
 }
 .button input[type="button"]:hover{
   background: #5029bc;
