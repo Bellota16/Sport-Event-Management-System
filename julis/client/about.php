@@ -73,7 +73,7 @@ include "index.php"
 <body>
     <div class="header">
         <h1 style="margin-left: 170px;">Welcome to our Sport Event Management System!</h1>
-        <p>Our mission is to bring passion, excitement, and organization to the world of sports events. With our user-friendly platform, we aim to make managing and participating in sporting events a breeze. Whether you're an event organizer, athlete, or sports enthusiast, our system is designed to cater to all your needs.</p>
+        <p>Our mission is to bring passion, excitement, and organization to the world of sports events.</p>
     </div>
     <div class="container">
         <div class="section">

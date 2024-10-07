@@ -29,7 +29,7 @@
                 $stmt->bind_param("sssss", $username, $gender, $email, $password, $confirmpassword);
                 $execval = $stmt->execute();
                 if($execval){
-                    echo "<script>alert('Registration successful!'); window.location.href='../header_footer/index.php';</script>";
+                    echo "<script>alert('Registration successful!'); window.location.href='login.php';</script>";
                     exit();
                 } else {
                     echo '<script>alert("Error: ' . $conn->error . '"); window.location.href="/signup.php";</script>';
