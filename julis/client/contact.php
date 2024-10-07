@@ -128,6 +128,7 @@ body{
   background: #5029bc;
 }
 
+
 @media (max-width: 950px) {
   .container{
     width: 90%;
