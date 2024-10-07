@@ -113,6 +113,7 @@ $conn->close();
         <div class="card">
             <i class="fas fa-newspaper"></i>
             <h3><?php echo $newsEventCount; ?></h3>
+            <>News  & Events</</div>
             <p>News</p>
         </div>
     </div>
