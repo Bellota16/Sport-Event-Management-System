@@ -86,7 +86,7 @@ if ($result->num_rows > 0) {
     }
 
     if ($page > 1) {
-        echo "<tr><td colspan='8'>";
+        echo "<tr><td colspan='8' style='text-align: right;'>";
         echo "<a class='btn-prev' href='" . $_SERVER['PHP_SELF'] . "?page=" . ($page - 1) . "&search=$search_term'>Previous</a>";
         echo "</td></tr>";
     }
