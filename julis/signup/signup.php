@@ -28,7 +28,11 @@
     h2 {
       text-align: center;
       margin-bottom: 50px;
+<<<<<<< HEAD
       color: #ffffff; /* Set color for h2 */
+=======
+      color: 
+>>>>>>> 246d555a1d1712df7473120a59fd32d472f37067
     }
 
     form {
@@ -78,6 +82,7 @@
       color: #ff0000;
       text-decoration: none;
     }
+<<<<<<< HEAD
     #gender {
       margin-top: 5px;
       margin-bottom: 10px;
@@ -210,3 +215,38 @@
 </body>
 </html>
 
+=======
+    #gender{
+      margin-top: 5px;
+      margin-bottom: 10px;   
+    }
+  </style>
+</head> 
+<body> 
+    <div class="container">
+      <form action="connect.php" method="post">
+        <h2>Create an Account</h2> 
+        <div id="names">
+          <input type="text" placeholder="Username" name="username" required id="name"/> 
+        </div>
+
+        <input type="email" name="email" placeholder="Email" id="email" required />
+
+        <div id="gender">
+          <label for="">Gender</label>
+          <label for="male">Male<input type="radio" name="gender" id="male" value="m"></label>
+          <label for="female">Female<input type="radio" name="gender" id="female" value="f"></label>
+        </div>
+
+        <div id="password">
+          <input type="password" name="password" placeholder="Password" required />   
+          <input type="password" name="confirm_password" placeholder="Confirm Password" required /> 
+        <br> 
+        <input type="submit" value="Sign Up" /> 
+        <p>Already have an account? <a href="./login.php" style="color:red;">Login</a></p>
+      </form> 
+    </div>
+    <script src="insert.js"></script>
+</body>
+</html>
+>>>>>>> 246d555a1d1712df7473120a59fd32d472f37067
