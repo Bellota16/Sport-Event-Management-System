@@ -57,17 +57,18 @@
               echo "</tr>";
           }
 
+          echo "<tr><td colspan='4' style='text-align: right;'>";
+
           if ($page > 1) {
-            echo "<tr><td colspan='4'>";
-            echo "<a class='btn-prev' href='" . $_SERVER['PHP_SELF'] . "?page=" . ($page - 1) . "&search=$search_term'>Previous</a>";
-            echo "</td></tr>";
-        }
-        
-        if ($offset + $items_per_page < $total_stadiums) {
-            echo "<tr><td colspan='4'>";
-            echo "<a class='btn-next' href='" . $_SERVER['PHP_SELF'] . "?page=" . ($page + 1) . "&search=$search_term'>Next</a>";
-            echo "</td></tr>";
+              echo "<a class='btn-prev' style='margin-right: 10px;' href='" . $_SERVER['PHP_SELF'] . "?page=" . ($page - 1) . "&search=$search_term'>Previous</a>";
           }
+          
+          if ($offset + $items_per_page < $total_stadiums) {
+              echo "<a class='btn-next' href='" . $_SERVER['PHP_SELF'] . "?page=" . ($page + 1) . "&search=$search_term'>Next</a>";
+          }
+          
+          echo "</td></tr>";
+          
       } else {
           echo "<tr><td colspan='4'>No stadiums found.</td></tr>";
       }

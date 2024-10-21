@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['team_id'])) {
         die("Connection failed: " . $conn->connect_error);
     }
 
-    // Prepare and execute the SQL statement to delete data from the "teams" table
+    // Prepare and execute the  statement to delete data from the "teams" table
     $delete_sql = "DELETE FROM teams WHERE team_id = ?";
     $delete_stmt = $conn->prepare($delete_sql);
     $delete_stmt->bind_param("i", $_POST['team_id']);
@@ -22,9 +22,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['team_id'])) {
     if ($delete_stmt->execute()) {
         $message = "Team deleted successfully.";
     } else {
-        $message = "Error deleting team. Please try again.";
+        $message = "Error deleting team: " . $delete_stmt->error;
     }
-
+    
     $delete_stmt->close();
     $conn->close();
     header("Location: ./manageteam.php" . $_GET['search']);
