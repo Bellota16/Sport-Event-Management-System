@@ -22,9 +22,6 @@ $result = $conn->query($sql);
 $stadiumCount = ($result->num_rows > 0) ? $result->fetch_assoc()['stadiumCount'] : 0;
 
 // Fetch the number of events
-$sql = "SELECT COUNT(*) AS eventCount FROM events";
-$result = $conn->query($sql);
-$eventCount = ($result->num_rows > 0) ? $result->fetch_assoc()['eventCount'] : 0;
 
 // Fetch the number of users (assuming you have a users table)
 $sql = "SELECT COUNT(*) AS userCount FROM users";
